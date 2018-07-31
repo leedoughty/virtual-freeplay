@@ -3,3 +3,110 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.App {
+  text-align: center;
+}
+
+.title {
+  font-family: roboto;
+  color: black;
+  font-size: 26px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.bgimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: roboto;
+  color: black;
+  font-size: 26px;
+}
+
+.menu {
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "large large large" "small1 small2 small3";
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 20px;
+  height: 300px;
+}
+
+.grid-item {
+  background-color: black;
+}
+
+.item1 {
+  grid-area: large;
+}
+
+@media (min-width: 950px) {
+  .main {
+    width: 900px;
+  }
+}
+
+@media (min-width: 500px) {
+  .grid-container {
+    height: 400px;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  bottom: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  font-family: Helvetica;
+  z-index: 100;
+}
+
+footer p {
+  padding: 0 100px;
+  white-space: nowrap;
+}
